@@ -1,0 +1,11 @@
+[project]
+name = "sendspin-sync-test"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.3.5",
+    "scipy>=1.16.3",
+    "sounddevice>=0.5.3",
+    "soundfile>=0.13.1",
+]

@@ -6,7 +6,10 @@ Verifies that offset measurement and sub-sample interpolation work correctly.
 
 import numpy as np
 from scipy import signal as sig
-from sync_test.measure_sync import SyncMeasurer, SAMPLE_RATE, US_PER_SAMPLE
+from sync_test.measure_sync import DEFAULT_SAMPLE_RATE, SyncMeasurer
+
+SAMPLE_RATE = DEFAULT_SAMPLE_RATE
+US_PER_SAMPLE = 1_000_000 / SAMPLE_RATE
 
 
 def create_test_chirp(duration_ms: float = 50, sample_rate: int = SAMPLE_RATE) -> np.ndarray:

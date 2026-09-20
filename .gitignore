@@ -8,3 +8,7 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Captures written by sync-measure
+sync_measurements_*.csv
+sync_verification_*.csv
